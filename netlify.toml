@@ -1,0 +1,7 @@
+[build]
+publish = "https://github.com/pkranz27/Weather-Widget"
+command = "npm run build"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
