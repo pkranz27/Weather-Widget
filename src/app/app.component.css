@@ -1,0 +1,6 @@
+.content{
+    background: rgb(251,63,215);
+    background: linear-gradient(304deg, rgb(224, 223, 223) 0%, rgba(252,70,107,1) 100%);
+    border: outset #b6095f;
+    justify-content: center;
+}

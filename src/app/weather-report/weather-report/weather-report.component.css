@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.top-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+mat-card {
+  width: 250px;
+  background-color: rgb(103, 148, 194);
+  box-shadow: outset 15px, 3px, rgb(53, 41, 49);
+  border: 7px outset rgb(48, 134, 134);
+}
+
+mat-card::ng-deep.mat-card-header-text {
+  width: 100%;
+  
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+
+  > div {
+      flex: 50%;
+      border-radius: 10px;
+      padding: 10px;
+  }
+
+  > .outlook {
+      color: rgb(58, 201, 201);
+      background: rgba(166, 182, 145, 0.1);
+  }
+
+  > .temp {
+      background: rgba(241, 237, 10, 0.87);
+      color: rgb(87, 55, 55);
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .big-text {
+      font-size: 30px;
+      margin-bottom: 10px;
+  }
+
+  .image {
+      height: 80px;
+  }
+}

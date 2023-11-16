@@ -1,0 +1,14 @@
+<mat-toolbar color="primary"> Philbo Baggins Hobbit Weather Forecast </mat-toolbar>
+<div class="content">
+  <mat-form-field color="primary">
+    <mat-label>Select city</mat-label>
+    <mat-select [formControl]="cityControl">
+      <mat-option *ngFor="let city of cities" [value]="city">
+       <span>{{city}}</span> 
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br />
+  <app-weather-report></app-weather-report>
+  <router-outlet></router-outlet>
+</div>
